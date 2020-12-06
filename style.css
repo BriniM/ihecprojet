@@ -1,0 +1,121 @@
+:root {
+    --lightTextColor: #beb9ae;
+    --ulBgColor: #232323;
+    --headerBgColor: #333;
+}
+
+body {
+    margin: 0;
+}
+
+header, main, footer, hr {
+    padding: 0 3rem;
+}
+
+main {
+    color: var(--headerBgColor);
+}
+
+.header {
+    background-color: #333;
+    color: var(--lightTextColor);
+}
+
+.header > h1 {
+    white-space: pre-line;
+}
+
+
+.header > nav > ul {
+    list-style-type: none;
+    background-color: var(--ulBgColor);
+    padding: 1rem;
+}
+
+.header > nav > ul > li > a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 calc(2/3 * 1rem);
+}
+
+.imgResponsive {
+    width: 100%;
+    height: auto;
+}
+
+.imgFooter {
+    padding: calc(1/4 * 1rem);
+    border: 1px solid var(--lightTextColor);
+}
+
+.justify {
+    text-align: justify;
+}
+
+/* Ensures there are at least 2 lines of text, so justification works */
+.justify:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+}
+
+/* Article anchor */
+.card-a {
+    color: orange;
+    text-decoration: none;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.float-contain {
+    overflow: hidden;
+}
+
+.card {
+    display: inline-block;
+    width: 16rem;
+}
+
+.margin-t {
+    margin-top: 1rem;
+}
+
+.float-l {
+    float: left;
+}
+
+.float-r {
+    float: right;
+}
+
+/* float-clear-left */
+.float-c-l {
+    clear: left;
+}
+
+@media only screen and (max-width: 51rem) {
+    .header > h1 {
+        float: none;
+        text-align: center;
+    }
+
+    .header > nav {
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 39.125rem) {
+    .justify {
+        text-align: center;
+    }
+}
